@@ -154,6 +154,7 @@ progress {
 .btn-option {
   width: 100%;
   text-align: left;
+  margin-bottom: 0.7rem;
 }
 
 .btn-option.correct {
