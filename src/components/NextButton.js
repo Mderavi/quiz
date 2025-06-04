@@ -1,10 +1,10 @@
-function NextButton(dispatch, answer) {
+function NextButton({ dispatch, answer }) {
   if (answer === null) return null;
 
   return (
     <button
       className="btn btn-ui"
-      onCLick={() => dispatch({ type: nextQuestion })}
+      onClick={() => dispatch({ type: "nextQuestion" })}
     >
       Next
     </button>
