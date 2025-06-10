@@ -61,7 +61,7 @@ function reducer(state, action) {
     case "restart":
       return {
         ...initialState,
-        questions: state.question,
+        questions: state.questions,
         status: "ready",
       };
     // return {
@@ -77,7 +77,7 @@ function reducer(state, action) {
   }
 }
 export default function App() {
-  const [{ questions, status, index, answer, points, heighscore }, dispatch] =
+  const [{ questions, status, index, answer, points, highscore }, dispatch] =
     useReducer(reducer, initialState);
 
   const numQuestions = questions.length;
@@ -128,7 +128,7 @@ export default function App() {
           <FinishScreen
             points={points}
             maxPossiblePoints={maxPossiblePoints}
-            heighscore={heighscore}
+            highscore={highscore}
             dispatch={dispatch}
           />
         )}
